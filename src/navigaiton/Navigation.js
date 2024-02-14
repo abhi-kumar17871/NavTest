@@ -1,32 +1,17 @@
 import "../styles/nav.css";
-
-function ProjectNav() {}
-
-function Navigation({ projectmousein, teammousein, workmousein, hoveraway }) {
+import React from "react";
+function Navigation({ projectmousein, teammousein, workmousein }) {
   return (
     <>
-      {/* main menu */}
       <ul className="option-wrapper main">
-        <li
-          className="options project"
-          onMouseEnter={projectmousein}
-          onMouseLeave={hoveraway}
-        >
+        <li className="options project" onMouseEnter={projectmousein}>
           Project
         </li>
-        <li
-          className="options work"
-          onMouseEnter={workmousein}
-          onMouseLeave={hoveraway}
-        >
+        <li className="options work" onMouseEnter={workmousein}>
           Work
         </li>
         <li className="options home">Home</li>
-        <li
-          className="options team"
-          onMouseEnter={teammousein}
-          onMouseLeave={hoveraway}
-        >
+        <li className="options team" onMouseEnter={teammousein}>
           Team
         </li>
         <li className="options contact">Contact</li>
